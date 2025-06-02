@@ -16,8 +16,8 @@ class Book(db.Model):
 
 # Route to get all books
 
-@app.route('/books', methods=['GET'])
-def get_books():
+@app.route('/', methods=['GET'])
+def index():
     return {"message": "Hello from Flask"} 
 
 @app.route('/books', methods=['GET'])
