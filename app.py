@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL") or \
-    "postgresql://username:password@hostname:5432/dbname"
+    "postgresql://books_fw05_user:3c0bhqYfnP9ZBimqnpxwSZ4eoQHcHXms@dpg-d0v7e1q4d50c73e87q40-a/books_fw05"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
