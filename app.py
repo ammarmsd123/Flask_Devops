@@ -21,7 +21,7 @@ class Book(db.Model):
 
 @app.route('/', methods=['GET'])
 def index():
-    return jsonify({"message": "Hello from Flask"})
+    return jsonify({"message": "Hello from saperated database flask"})
 
 @app.route('/books', methods=['GET'])
 def get_books():
